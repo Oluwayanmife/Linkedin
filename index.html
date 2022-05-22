@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Font Awesome/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Linkedin</title>
+    <link rel="shortcut icon" href="../img/linkedin-logo-png-2026-Windows.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- First Logo Impression -->
+
+    <h1 class="brand">Linked
+        <i class="fab fa-linkedin"></i>
+        <!-- <img src="../img/linkedin-logo-png-2048-Windows.ico"> -->
+    </h1>
+    <div class="container">
+
+
+        <!-- Content Starts Here -->
+
+        <div class="content">
+            <div class="sign">
+                <h1>Sign in</h1>
+                <p>Stay updated on your professional world</p>
+            </div>
+
+            <!-- Form Area -->
+            <form action="" method="post">
+                <div class="form-control">
+                    <input type="text" name="username" value="" placeholder="Email or Phone" autocapitalize="none"
+                        id="id_username" autocomplete="username" autofocus="" required>
+                </div>
+
+                <div class="form-control" id="pass">
+                    <input type="password" name="password" value="" placeholder="Password"
+                        autocomplete="current-password" id="id_password" required>
+
+                    <div class="show_hide">
+                        <i class="toggle" id="show" onclick="togglePassword();">Show</i>
+                        <i class="toggle" id="hide" onclick="togglePassword();">Hide</i>
+                    </div>
+                </div>
+                <a href="#">Forgot Password?</a>
+
+                <button type="submit" class="button">Sign in</button>
+
+                <div class="terms">
+                    <input type="checkbox" id="join" required>
+                    <label>*By clicking you agree to the linkedin <a href="#">User Privacy Policy</a> and <a
+                            href="#">Cookie Policy</a></label>
+                </div>
+
+                <!-- Second Content Part -->
+                <div class="or-container">
+                    <div class="line"></div>
+                    <div class="or-label">or</div>
+                    <div class="line"></div>
+                </div>
+            </form>
+            <div class="links">
+                <a href="#">
+                    <button class="btn">
+                        <img src="../img/Google-48-96px/icons8-google-48.png">
+                        Sign in with Google
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="btn">
+                        <i class="fab fa-apple fa-2x"></i>
+                        Sign in with Apple
+                    </button>
+                </a>
+                <!-- <br> -->
+            </div>
+
+        </div>
+        <p class="text-center">New to Linkedin? <a href="<?= base_url() ?>auth/login" data-abc="true"> Join
+                now</a></p>
+    </div>
+</body>
+
+</html>
